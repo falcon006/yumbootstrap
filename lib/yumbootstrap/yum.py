@@ -4,9 +4,9 @@ import rpm as rpm_mod
 import os
 import shutil
 
-import bdb
-import sh
-import fs
+import yumbootstrap.bdb as bdb
+import yumbootstrap.sh as sh
+import yumbootstrap.fs as fs
 
 import logging
 logger = logging.getLogger("yum")

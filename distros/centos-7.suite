@@ -7,7 +7,7 @@ gpg_key ?= gpg/RPM-GPG-KEY-CentOS-Security-7
 packages = packages/${suite}.list
 
 [post_install]
-finalize = scripts/fix_rpmdb.py
+#finalize = scripts/fix_rpmdb.py
 finalize = scripts/clean_yumbootstrap.py
 
 [repositories]

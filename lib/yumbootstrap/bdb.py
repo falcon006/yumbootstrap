@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import sys
-import bsddb
+import bsddb3
 
 #-----------------------------------------------------------------------------
 

@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
 import logging
-import time
-
+from datetime import datetime
 #-----------------------------------------------------------------------------
 
 class ProgressHandler(logging.Handler):
   def emit(self, record):
-    print time.strftime('[%T] ') + record.getMessage()
+    now = datetime.now()
+    print ( now.strftime("[%T] ") ,  record.getMessage())
 
 #-----------------------------------------------------------------------------
 # vim:ft=python
